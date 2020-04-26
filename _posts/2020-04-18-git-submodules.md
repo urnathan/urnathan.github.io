@@ -2,6 +2,7 @@
 layout: post
 title: Git Submodules
 category: blog
+comments_id: 1
 ---
 
 TL;DR: Symlinks > Submodules.
