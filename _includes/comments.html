@@ -11,10 +11,6 @@ request.onload = function() {
 	for ( var i = 0; i < response.length; i++ ) {
 	    document.getElementById( 'gh-comments-list' ).appendChild( createCommentEl( response[ i ] ) );
 	}
-
-	if ( 0 === response.length ) {
-	    document.getElementById( 'no-comments-found' ).style.display = 'block';
-	}
     } else {
 	console.error( this );
     }
@@ -62,6 +58,5 @@ request.send();
 <div class="github-comments">
 	<h2>Comments</h2>
 	<ul id="gh-comments-list"></ul>
-	<p id="no-comments-found">No comments found for this article.</p>
 	<p id="leave-a-comment">Join the discussion for this article on <a href="https://github.com/urnathan/urnathan.github.com/issues/{{ page.comments_id }}">this ticket</a>. Comments appear on this page insteantly.</p>
 </div>
