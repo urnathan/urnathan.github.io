@@ -5,16 +5,21 @@ category: blog
 comments_id: 3
 ---
 
-TL;DR; I made a thing I didn't expect to.
-
-I was working on a personal project, and being the good engineer I am,
-I needed to test it behaved as intended.  I started out with simply
-adding rules to a Makefile.  But that got increasingly cumbersome, and
-difficult to really tell what was happening.  I needed a proper testsuite.
+I made a thing I didn't expect to.  When working on a personal
+project, and being the good engineer I am, I needed to test it behaved
+as intended.  I started out with simply adding rules to a Makefile.
+But that got increasingly cumbersome, and difficult to really tell
+what was happening.  I needed a proper testsuite.
 
 At this point I might have turned to
 [dejagnu](https://www.gnu.org/software/dejagnu/), because that's the
-testsuite I know.  But I didn't want to do that because (a) I've used
+testsuite I know.  But I didn---
+layout: post
+title: An Accidental Project
+category: blog
+comments_id: 3
+---
+'t want to do that because (a) I've used
 it and (b) [Ian Taylor](https://www.airs.com/blog/archives/499) has
 some things to say about it.  I went looking for something else.  My
 first port of call was [llvm's](http://llvm.org/) testsuite, as that
