@@ -21,15 +21,15 @@ The first is an interesting mechanic.  Here, the physics of being
 loaded up with boxes of various masses affects how you walk.  I mean,
 you can still carry an unrealistic amount of stuff.  But you become
 ungainly if you have a lot -- and walking up and down hills can be
-difficult.  So, in DS, you're a courier carting stuff around a post
-apocalptic wilderness.
+difficult.  So, in DS, you're a courier carting stuff around a
+post-apocalptic wilderness.
 
 The second aspect is that rain is effectively acidic, it starts
 destroying your packages and equipment.  You want to avoid it.
 
 Being a future UPS guy is not really enough to hang a game on.  It
 lacks sufficient hook.  But you know, some might like it.  There is a
-bit of a mystery about the apocolyptic event.  But it's only a puzzle
+bit of a mystery about the apocalyptic event.  But it's only a puzzle
 to you, all the NPCs know.
 
 Let's get to the problems.
@@ -75,6 +75,11 @@ Let's get to the problems.
 * Stupid names.  Character names are idiotic.  'deadman', 'the
   engineer', 'fragile', 'diehardman'.  The last ne essentially treats
   you as his pet dog &mdash; 'Go fetch that!'
+
+* Story-breaking communication.  The game arc as you rescuing a
+  estranged-sister? ex-wife? (not sure).  She's been kidnapped by
+  baddies.  But for some reason you can openly communicate with her
+  and talk about the escape. WTF are these kidnappers thinking?
 
 * Unskippable death.  The death sequence is horrific.  And you can't
   skip it to get to the loading screen.  I've taken to turning the TV
