@@ -8,8 +8,8 @@ comments_id: 4
 This Memorial Day weekend is a 4 day holiday for me, because my
 employer decided we should all take Friday off too.  But of course, no
 travel.  I decided that I needed to properly librarify my modules
-protocol library of mine, so that it could be extended for other uses
-and used in other projects.
+protocol library, so that it could be extended for other uses
+and used in other projects.  (ETA:This is now libcody)
 
 First I needed a name, that of course is one of the hard problems of
 CS.  I punted as one didn't come to mind &mdash; I can always apply
