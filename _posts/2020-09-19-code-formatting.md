@@ -34,9 +34,9 @@ void foo ()
 
 The two things GNU style added to my style were:
 
-1 white space between (most) operators, and in many other places.
+1 White space between (most) operators, and in many other places.
 
-2 line breaking puts the operator at the start of the second line
+2 Line breaking puts the operator at the start of the second line
 (which is indendented).
 
 The first brought home that whitespace is important.  It makes your
@@ -45,7 +45,7 @@ spaces, the same is true, with a few exceptions, of the operators you
 use in your code.  `a+b` looks like one thing.  `a + b` is clearly 3
 things.  It took humans a while to figure that out with natural
 languages -- old lation enscriptions do not have spaces, and are thus
-very hard to read.
+very hard to read.  It's the same with code.
 
 The second is rather subtle.  When you're reading one line of code how
 can you tell if it continues the previous line?  Well, clue #1 is that
@@ -117,6 +117,9 @@ for (auto a: ary)
   ...;
 ```
 
+Isn't the second one clearer -- clearly separating validation from
+processing?
+
 Who cares if we're taking up vertical space?  It's not like we're
 printing this stuff on physical pages.  Our editor windows are large
 enough that this isn't going to hide stuff -- and if your algorithm is
@@ -150,9 +153,10 @@ void foo (Type arg1, std::vector<thing> arg2, std::string name = "",
 
 ```
 
-That looks perfectly reasonable.  I;ve been writing them like that for
-years.  But consider that line wrap, and what happens if we rename
-`foo`, but forget to reindent?
+That looks perfectly reasonable.  I've been writing them like that for
+years.  It was a little awkward when the function name gets long (or
+more qualified with class name).  But consider that line wrap, and
+what happens if we rename `foo`, but forget to reindent?
 
 ```c++
 void foo_variant (Type arg1, std::vector<thing> arg2, std::string name = "",
@@ -163,7 +167,7 @@ void foo_variant (Type arg1, std::vector<thing> arg2, std::string name = "",
 
 ```
 
-Oops, the remaining paramters are not nicely aligned.  Now try adding
+Oops, the remaining parameters are not nicely aligned.  Now try adding
 an attribute to it:
 
 ```c++
@@ -218,6 +222,7 @@ class D
 };
 ```
 
+Now the base classes are a clear separate component of the class.
 (The same rule applies to enumerators with underlying types.)
 
 Where do your except specification and/or this qualifiers go -- on
@@ -242,6 +247,17 @@ protected:
   virtual bool ProcessLine
     (std::string_view const &variant, std::string_view const &pattern)
     override;  // stands out here, doesn't it?
+```
+
+Now of course we have `requires` clauses and trailing return types.
+Again, separate lines.
+
+```c++
+template <typename T>
+auto Frob
+  (T &v)
+  -> std::make_unsigned (decltype (v * 2))
+  requires (std::is_integral_v<T>);
 ```
 
 What about defaulted or deleted functions?  The `= default` bit *is*
